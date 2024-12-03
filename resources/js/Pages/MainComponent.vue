@@ -1,7 +1,7 @@
 <template>
     <header>
         <div class="logo">
-            <img class="variant-image" src="./images/zivon.png" alt="Zivon">
+            <img class="variant-image" src="../../../public/images/zivon.png" alt="Zivon">
         </div>
     </header>
     <main>
@@ -14,7 +14,7 @@
             </div>
             <div class="product-image">
                 <div class="main-image">
-                    <img id="bigImage" src="./images/sunglasses_1.png">
+                    <img id="bigImage" src="../../../public/images/sunglasses_1.png">
                 </div>
                 <div class="main-round">
                 </div>
@@ -24,7 +24,7 @@
                          data-price="$225.00"
                          data-description="Z-I 02 sunglasses features a sleek black upper frame paired with gold detailing, these square-shaped stunners radiate vintage-inspired sophistication. Perfect for those who dare to stand out with effortless class.">
                         <div class="line"></div>
-                        <img class="smallImage" src="./images/sunglasses_1.png" alt="Z-I 02">
+                        <img class="smallImage" src="../../../public/images/sunglasses_1.png" alt="Z-I 02">
                         <span>Z-I 02</span>
                     </div>
                     <div class="variant"
@@ -32,7 +32,7 @@
                          data-price="$189.00"
                          data-description="Elevate your style with the Z-R98 sunglasses—sleek black frames paired with bold geometric accents for a contemporary twist. Perfectly blending modern flair with everyday comfort, these shades are your ultimate companion for sun-soaked adventures.">
                         <div class="line"></div>
-                        <img class="smallImage" src="./images/sunglasses_2.png" alt="Z-R 98">
+                        <img class="smallImage" src="../../../public/images/sunglasses_2.png" alt="Z-R 98">
                         <span>Z-R 98</span>
                     </div>
                     <div class="variant"
@@ -40,7 +40,7 @@
                          data-price="$198.00"
                          data-description="Step into timeless sophistication with the Z-S 03 sunglasses. Featuring a luxurious gold frame and warm amber lenses, these retro-inspired shades exude effortless charm and refined elegance. A must-have for the modern trendsetter.">
                         <div class="line"></div>
-                        <img class="smallImage" src="./images/sunglasses_3.png" alt="Z-S 03">
+                        <img class="smallImage" src="../../../public/images/sunglasses_3.png" alt="Z-S 03">
                         <span>Z-S 03</span>
                     </div>
                     <div class="variant"
@@ -48,7 +48,7 @@
                          data-price="$245.00"
                          data-description="Unleash modern elegance with these ultra-sleek Z sunglasses. Featuring a minimalist rimless design, bold gold accents, and refined rectangular lenses, they are the epitome of understated luxury. Perfect for those who value sophistication in simplicity.">
                         <div class="line"></div>
-                        <img class="smallImage" src="./images/sunglasses_4.png" alt="Z-H 00">
+                        <img class="smallImage" src="../../../public/images/sunglasses_4.png" alt="Z-H 00">
                         <span>Z-H 00</span>
                     </div>
                     <div class="variant"
@@ -56,7 +56,7 @@
                          data-price="$225.00"
                          data-description="Z-I 02 sunglasses. features a sleek black upper frame paired with gold detailing, these square-shaped stunners radiate vintage-inspired sophistication. Perfect for those who dare to stand out with effortless class.">
                         <div class="line"></div>
-                        <img class="smallImage" src="./images/sunglasses_1.png" alt="Z-I 02">
+                        <img class="smallImage" src="../../../public/images/sunglasses_1.png" alt="Z-I 02">
                         <span>Z-I 02</span>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
     <footer>
         <div class="footer-first-line">
             <div class="logo">
-                <img src="./images/zivon.png" alt="Zivon">
+                <img src="../../../public/images/zivon.png" alt="Zivon">
             </div>
             <div class="info">
                 <span>Address: Everett, WA</span>

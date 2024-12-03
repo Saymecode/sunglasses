@@ -8,8 +8,6 @@ class MainController extends Controller
 {
     public function index()
     {
-        return Inertia::render('MainComponent', [
-            'title' => 'Sunglasses store',
-        ]);
+        return view('app');
     }
 }
