@@ -73,7 +73,7 @@
                 </div>
                 <div class="info">
                     <span>Address: Everett, WA</span>
-                    <span><a href="tel:+12063275800">Phone: +1 (206) 327 5800</a></span>
+                    <span><a href="tel:+12063275800">Phone: +1 (206) 327-5800</a></span>
                     <span><a href="mailto:fkpopal@gmail.com">Email: fkpopal@gmail.com</a></span>
                 </div>
             </div>
@@ -119,7 +119,7 @@
                 const phoneSpan = document.createElement('span');
                 const phoneLink = document.createElement('a');
                 phoneLink.href = 'tel:+12063275800';
-                phoneLink.textContent = 'Phone: +1 (206) 327 5800';
+                phoneLink.textContent = 'Phone: +1 (206) 327-5800';
                 phoneSpan.appendChild(phoneLink);
                 popup.appendChild(phoneSpan);
                 popup.appendChild(document.createElement('br'));
