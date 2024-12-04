@@ -73,8 +73,8 @@
                 </div>
                 <div class="info">
                     <span>Address: Everett, WA</span>
-                    <span><a href="tel:+14251111111">Phone: +1 (425) 111 1111</a></span>
-                    <span><a href="mailto:email@mmm.com">Email: email@mmm.com</a></span>
+                    <span><a href="tel:+12063275800">Phone: +1 (206) 327 5800</a></span>
+                    <span><a href="mailto:fkpopal@gmail.com">Email: fkpopal@gmail.com</a></span>
                 </div>
             </div>
         </footer>
@@ -118,16 +118,16 @@
 
                 const phoneSpan = document.createElement('span');
                 const phoneLink = document.createElement('a');
-                phoneLink.href = 'tel:+14251111111';
-                phoneLink.textContent = 'Phone: +1 (425) 111 1111';
+                phoneLink.href = 'tel:+12063275800';
+                phoneLink.textContent = 'Phone: +1 (206) 327 5800';
                 phoneSpan.appendChild(phoneLink);
                 popup.appendChild(phoneSpan);
                 popup.appendChild(document.createElement('br'));
 
                 const emailSpan = document.createElement('span');
                 const emailLink = document.createElement('a');
-                emailLink.href = 'mailto:email@mmm.com';
-                emailLink.textContent = 'Email: email@mmm.com';
+                emailLink.href = 'mailto:fkpopal@gmail.com';
+                emailLink.textContent = 'Email: fkpopal@gmail.com';
                 emailSpan.appendChild(emailLink);
                 popup.appendChild(emailSpan);
                 popup.appendChild(document.createElement('br'));
