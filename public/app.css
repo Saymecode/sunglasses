@@ -499,7 +499,6 @@ footer {
     }
     main {
         padding: 15px;
-        height: calc(100% - 57px - 80px);
     }
 
     .logo {
