@@ -398,7 +398,7 @@ footer {
     }
     main {
         padding: 15px;
-        height: calc(100% - 57px - 89.59px);
+        height: auto;
     }
 
     .logo {
