@@ -274,7 +274,7 @@ footer {
 }
 
 @media (max-width: 1448px) {
-    .main {
+    main {
         height: auto;
     }
     .product{
