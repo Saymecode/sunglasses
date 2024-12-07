@@ -52,25 +52,6 @@ img {
     padding-right: 30px;
 }
 
-/*@media (max-width: 1448px) {
-    .product{
-        flex-direction: column;
-        .product-info {
-            width: 100%;
-            padding-top: 0;
-        }
-
-        .product-image {
-            width: 100%;
-            padding-top: 150px;
-            margin-left: 0;
-            .main-round {
-                top: 140px;
-            }
-        }
-    }
-}*/
-
 .product-info h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
@@ -121,6 +102,19 @@ img {
 .product-image .main-image {
     display: flex;
     align-items: center;
+    &:after{
+        content: "";
+        position: absolute;
+        width: 370px;
+        height: 370px;
+        border: 2.5px solid #ca453d;
+        border-left: none;
+        border-top: none;
+        border-bottom: none;
+        border-radius: 50%;
+        pointer-events: none;
+        z-index: 2;
+    }
 }
 
 .product-image .main-image img {
@@ -131,21 +125,6 @@ img {
 
 .smallImage {
     cursor: pointer;
-}
-
-.main-round {
-    position: absolute;
-    top: 190px;
-    left: 0;
-    width: 370px;
-    height: 370px;
-    border: 2.5px solid #ca453d;
-    border-left: none;
-    border-top: none;
-    border-bottom: none;
-    border-radius: 50%;
-    pointer-events: none;
-    z-index: 2;
 }
 
 .variants {
@@ -291,5 +270,317 @@ footer {
     a {
         color: white;
         text-decoration: none;
+    }
+}
+
+@media (max-width: 1448px) {
+    .product{
+        flex-direction: column-reverse;
+        .product-info {
+            width: 100%;
+            padding-top: 0;
+            padding-right: 0px;
+        }
+
+        .product-image {
+            width: 100%;
+            padding-top: 100px;
+            margin-bottom: 150px;
+            margin-left: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .variants {
+            width: 400px;
+        }
+    }
+}
+
+@media (max-width: 1655px) {
+    .product{
+        .product-info {
+        }
+
+        .product-image {
+            margin-left: 50px;
+        }
+    }
+}
+
+@media (max-width: 820px) {
+    p, span, a, button {
+        font-size: 14px;
+    }
+    h2 {
+        font-size: 16px;
+    }
+    .product {
+        .product-info {
+
+        }
+
+        .product-image {
+            .main-image {
+                img {
+                    height: 250px;
+                    width: 250px;
+                }
+                &:after{
+                    width: 270px;
+                    height: 270px;
+                }
+            }
+        }
+
+        .variants {
+            .variant{
+                .line {
+                    top: 35px;
+                }
+                &:nth-child(1) {
+                    .line{
+                        --angle: -24deg;
+                        width: 118px;
+                    }
+                }
+                &:nth-child(2) {
+                    top: -5px;
+                    .line{
+                        --angle: -18deg;
+                        width: 96px;
+                    }
+                }
+                &:nth-child(3) {
+                    top: 90px;
+                    .line{
+                        --angle: 0deg;
+                        width: 136px;
+                    }
+                }
+                &:nth-child(4) {
+                    top: 185px;
+                    .line{
+                        --angle: 22deg;
+                        width: 96px;
+                    }
+                }
+                &:nth-child(5) {
+                    top: 280px;
+                    .line{
+                        --angle: 34deg;
+                        width: 105px;
+                    }
+                }
+            }
+            .variant {
+                img {
+                    width: 75px;
+                    height: 75px;
+                }
+                span {
+                    font-size: 14px;
+                    padding: 18px;
+                    padding-left: 80px;
+                    padding-right: 50px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 700px) {
+    p, span, a, button {
+        font-size: 12px;
+    }
+    main {
+        padding: 15px;
+        height: calc(100% - 57px - 89.59px);
+    }
+
+    .logo {
+        img {
+            height: 25px;
+        }
+    }
+
+    .product {
+        .product-info {
+            h2, .price, button {
+                font-size: 16px;
+            }
+        }
+
+        .product-image {
+            margin-left: 0;
+            padding-top: 90px;
+            margin-bottom: 100px;
+            .main-image {
+                img {
+                    height: 150px;
+                    width: 150px;
+                }
+                &:after{
+                    width: 160px;
+                    height: 160px;
+                }
+            }
+        }
+
+        .variants {
+            .variant{
+                .line {
+                    top: 23px;
+                }
+                &:nth-child(1) {
+                    top: -65px;
+                    .line{
+                        --angle: -24deg;
+                        width: 75px;
+                    }
+                }
+                &:nth-child(2) {
+                    top: -10px;
+                    left: 45px;
+                    .line{
+                        --angle: -18deg;
+                        width: 65px;
+                    }
+                }
+                &:nth-child(3) {
+                    top: 45px;
+                    left: 90px;
+                    .line{
+                        --angle: 0deg;
+                        width: 110px;
+                    }
+                }
+                &:nth-child(4) {
+                    top: 100px;
+                    left: 45px;
+                    .line{
+                        --angle: 22deg;
+                        width: 60px;
+                    }
+                }
+                &:nth-child(5) {
+                    top: 155px;
+                    .line{
+                        --angle: 34deg;
+                        width: 54px;
+                    }
+                }
+            }
+            .variant {
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+                span {
+                    font-size: 12px;
+                    padding: 6px;
+                    padding-left: 60px;
+                    padding-right: 30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 500px) {
+    p, span, a, button {
+        font-size: 10px;
+    }
+    main {
+        padding: 15px;
+        height: calc(100% - 57px - 80px);
+    }
+
+    .logo {
+        img {
+            height: 25px;
+        }
+    }
+
+    .product {
+        .product-info {
+            h2, .price, button {
+                font-size: 16px;
+            }
+        }
+
+        .product-image {
+            margin-left: 0;
+            padding-top: 70px;
+            margin-bottom: 70px;
+            .main-image {
+                img {
+                    height: 150px;
+                    width: 150px;
+                }
+                &:after{
+                    width: 160px;
+                    height: 160px;
+                }
+            }
+        }
+
+        .variants {
+            .variant{
+                .line {
+                    top: 23px;
+                }
+                &:nth-child(1) {
+                    top: -65px;
+                    .line{
+                        --angle: -24deg;
+                        width: 75px;
+                    }
+                }
+                &:nth-child(2) {
+                    top: -10px;
+                    left: 40px;
+                    .line{
+                        --angle: -18deg;
+                        width: 59px;
+                    }
+                }
+                &:nth-child(3) {
+                    top: 45px;
+                    left: 75px;
+                    .line{
+                        --angle: 0deg;
+                        width: 90px;
+                    }
+                }
+                &:nth-child(4) {
+                    top: 100px;
+                    left: 40px;
+                    .line{
+                        --angle: 22deg;
+                        width: 50px;
+                    }
+                }
+                &:nth-child(5) {
+                    top: 155px;
+                    .line{
+                        --angle: 34deg;
+                        width: 53px;
+                    }
+                }
+            }
+            .variant {
+                img {
+                    width: 50px;
+                    height: 50px;
+                }
+                span {
+                    font-size: 12px;
+                    padding: 6px;
+                    padding-left: 60px;
+                    padding-right: 30px;
+                }
+            }
+        }
     }
 }
