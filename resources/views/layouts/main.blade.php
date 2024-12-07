@@ -7,6 +7,6 @@
     <title>Sunglasses store</title>
 </head>
     @yield('content')
-    <link rel="stylesheet" href="app.css">
+    <link rel="stylesheet" href="app.css?v=1">
 </body>
 </html>
