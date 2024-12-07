@@ -274,6 +274,9 @@ footer {
 }
 
 @media (max-width: 1448px) {
+    .main {
+        height: auto;
+    }
     .product{
         flex-direction: column-reverse;
         .product-info {
