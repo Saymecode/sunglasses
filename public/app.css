@@ -489,7 +489,7 @@ footer {
 
 @media (max-width: 500px) {
     p, span, a, button {
-        font-size: 12px;
+        font-size: 14px;
     }
     main {
         padding: 15px;
