@@ -393,6 +393,9 @@ footer {
     p, span, a, button {
         font-size: 14px;
     }
+    header, footer {
+        padding: 10px;
+    }
     main {
         padding: 15px;
         height: calc(100% - 57px - 89.59px);
