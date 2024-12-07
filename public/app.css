@@ -29,7 +29,6 @@ header {
 
 main {
     padding: 2rem;
-    height: calc(100% - 72px - 108.78px);
 }
 
 img {
@@ -254,6 +253,9 @@ footer {
     background-color: #111;
     color: #fff;
     padding: 1rem 2rem;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
     .logo{
         display: flex;
         flex-direction: column;
@@ -274,9 +276,6 @@ footer {
 }
 
 @media (max-width: 1448px) {
-    main {
-        height: auto;
-    }
     .product{
         flex-direction: column-reverse;
         .product-info {
@@ -401,7 +400,6 @@ footer {
     }
     main {
         padding: 15px;
-        height: auto;
     }
 
     .logo {
