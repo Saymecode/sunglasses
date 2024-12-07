@@ -310,10 +310,10 @@ footer {
 
 @media (max-width: 820px) {
     p, span, a, button {
-        font-size: 15px;
+        font-size: 14px;
     }
     h2 {
-        font-size: 17px;
+        font-size: 16px;
     }
     .product {
         .product-info {
@@ -391,7 +391,7 @@ footer {
 
 @media (max-width: 700px) {
     p, span, a, button {
-        font-size: 12px;
+        font-size: 14px;
     }
     main {
         padding: 15px;
@@ -477,7 +477,7 @@ footer {
                     height: 50px;
                 }
                 span {
-                    font-size: 12px;
+                    font-size: 14px;
                     padding: 6px;
                     padding-left: 60px;
                     padding-right: 30px;
@@ -498,7 +498,7 @@ footer {
 
     .logo {
         img {
-            height: 25px;
+            height: 35px;
         }
     }
 
@@ -575,7 +575,7 @@ footer {
                     height: 50px;
                 }
                 span {
-                    font-size: 12px;
+                    font-size: 14px;
                     padding: 6px;
                     padding-left: 60px;
                     padding-right: 30px;
