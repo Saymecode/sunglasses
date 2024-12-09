@@ -1,5 +1,6 @@
 <html>
 <!DOCTYPE html>
+<link rel="stylesheet" href="app1.css?v=1.3">
 <body lang="en">
 <head>
     <meta charset="UTF-8">
@@ -7,6 +8,5 @@
     <title>Sunglasses store</title>
 </head>
     @yield('content')
-    <link rel="stylesheet" href="app.css?v=1.3">
 </body>
 </html>
