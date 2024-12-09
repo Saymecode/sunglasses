@@ -4,4 +4,5 @@
 3. `cp database/database.example database/database.sqlite`
 4. `php artisan migrate`
 5. `php artisan db:seed`
-6. `composer run dev`
+6. `npm run build`
+7. `composer run dev`
