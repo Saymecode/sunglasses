@@ -12,12 +12,23 @@
                 <div class="product-info">
                     <h2 class="variant-name">Z-I 02</h2>
                     <p class="variant-description">Z-I 02 sunglasses features a sleek black upper frame paired with gold detailing, these square-shaped stunners radiate vintage-inspired sophistication. Perfect for those who dare to stand out with effortless class.</p>
-                    <span class="price variant-price">$225.00</span>
+                    <div class="price-wrapper">
+                        <span class="price old-price variant-old-price">$325.00</span>
+                        <span class="price new-price variant-price">$225.00</span>
+                    </div>
                     <button id="showPopup">Buy</button>
                 </div>
                 <div class="product-image">
-                    <div class="main-image">
-                        <img id="bigImage" src="./images/sunglasses_1.png">
+                    <div class="slider">
+                        <div class="main-image">
+                            <div class="arrow left-arrow">
+                                <
+                            </div>
+                            <img id="bigImage" src="./images/sunglasses_1_1.png">
+                            <div class="arrow right-arrow">
+                               >
+                            </div>
+                        </div>
                     </div>
                     <div class="main-round">
                     </div>
@@ -25,41 +36,46 @@
                         <div class="variant active"
                              data-name="Z-I 02"
                              data-price="$225.00"
+                             data-old-price="$325.00"
                              data-description="Z-I 02 sunglasses features a sleek black upper frame paired with gold detailing, these square-shaped stunners radiate vintage-inspired sophistication. Perfect for those who dare to stand out with effortless class.">
                             <div class="line"></div>
-                            <img class="smallImage" src="./images/sunglasses_1.png" alt="Z-I 02">
+                            <img class="smallImage" src="./images/sunglasses_1_1.png" alt="Z-I 02">
                             <span>Z-I 02</span>
                         </div>
                         <div class="variant"
                              data-name="Z-R 98"
                              data-price="$189.00"
+                             data-old-price="$289.00"
                              data-description="Elevate your style with the Z-R98 sunglasses—sleek black frames paired with bold geometric accents for a contemporary twist. Perfectly blending modern flair with everyday comfort, these shades are your ultimate companion for sun-soaked adventures.">
                             <div class="line"></div>
-                            <img class="smallImage" src="./images/sunglasses_2.png" alt="Z-R 98">
+                            <img class="smallImage" src="./images/sunglasses_2_1.png" alt="Z-R 98">
                             <span>Z-R 98</span>
                         </div>
                         <div class="variant"
                              data-name="Z-S 03"
                              data-price="$198.00"
+                             data-old-price="$298.00"
                              data-description="Step into timeless sophistication with the Z-S 03 sunglasses. Featuring a luxurious gold frame and warm amber lenses, these retro-inspired shades exude effortless charm and refined elegance. A must-have for the modern trendsetter.">
                             <div class="line"></div>
-                            <img class="smallImage" src="./images/sunglasses_3.png" alt="Z-S 03">
+                            <img class="smallImage" src="./images/sunglasses_3_1.png" alt="Z-S 03">
                             <span>Z-S 03</span>
                         </div>
                         <div class="variant"
                              data-name="Z-H 00"
                              data-price="$245.00"
+                             data-old-price="$345.00"
                              data-description="Unleash modern elegance with these ultra-sleek Z sunglasses. Featuring a minimalist rimless design, bold gold accents, and refined rectangular lenses, they are the epitome of understated luxury. Perfect for those who value sophistication in simplicity.">
                             <div class="line"></div>
-                            <img class="smallImage" src="./images/sunglasses_4.png" alt="Z-H 00">
+                            <img class="smallImage" src="./images/sunglasses_4_1.png" alt="Z-H 00">
                             <span>Z-H 00</span>
                         </div>
                         <div class="variant"
                              data-name="Z-I 02"
                              data-price="$225.00"
+                             data-old-price="$325.00"
                              data-description="Z-I 02 sunglasses. features a sleek black upper frame paired with gold detailing, these square-shaped stunners radiate vintage-inspired sophistication. Perfect for those who dare to stand out with effortless class.">
                             <div class="line"></div>
-                            <img class="smallImage" src="./images/sunglasses_1.png" alt="Z-I 02">
+                            <img class="smallImage" src="./images/sunglasses_1_1.png" alt="Z-I 02">
                             <span>Z-I 02</span>
                         </div>
                     </div>
@@ -72,9 +88,9 @@
                     <img src="./images/zivon.png" alt="Zivon">
                 </div>
                 <div class="info">
-                    <span>Address: Everett, WA</span>
-                    <span><a href="tel:+12063275800">Phone: +1 (206) 327-5800</a></span>
-                    <span><a href="mailto:fkpopal@gmail.com">Email: fkpopal@gmail.com</a></span>
+                    <span>Seattle, WA, USA</span>
+                    <span><a href="tel:+12063275800">+1 (206) 327-5800</a></span>
+                    <span><a href="mailto:fkpopal@gmail.com">fkpopal@gmail.com</a></span>
                 </div>
             </div>
         </footer>
@@ -175,14 +191,16 @@
             let tempName =document.querySelector('.variant-name').innerHTML;
             let tempDescription = document.querySelector('.variant-description').innerHTML;
             let tempPrice = document.querySelector('.variant-price').innerHTML;
+            let tempOldPrice = document.querySelector('.variant-old-price').innerHTML;
 
-            variants.forEach(variant => {
+            /*variants.forEach(variant => {
                 const image = variant.querySelector('img');
                 variant.addEventListener('mouseover', function() {
                     bigImage.src = image.src;
                     document.querySelector('.variant-name').innerHTML = variant.getAttribute('data-name')
                     document.querySelector('.variant-description').innerHTML = variant.getAttribute('data-description')
                     document.querySelector('.variant-price').innerHTML = variant.getAttribute('data-price')
+                    document.querySelector('.variant-old-price').innerHTML = variant.getAttribute('data-old-price')
                 });
 
                 variant.addEventListener('mouseout', function() {
@@ -190,8 +208,9 @@
                     document.querySelector('.variant-name').innerHTML = tempName
                     document.querySelector('.variant-description').innerHTML = tempDescription
                     document.querySelector('.variant-price').innerHTML = tempPrice
+                    document.querySelector('.variant-old-price').innerHTML = tempOldPrice
                 });
-            });
+            });*/
 
             variants.forEach(variant => {
                 const image = variant.querySelector('img')
@@ -200,13 +219,51 @@
                     document.querySelector('.variant-name').innerHTML = variant.getAttribute('data-name')
                     document.querySelector('.variant-description').innerHTML = variant.getAttribute('data-description')
                     document.querySelector('.variant-price').innerHTML = variant.getAttribute('data-price')
+                    document.querySelector('.variant-old-price').innerHTML = variant.getAttribute('data-old-price')
                     variant.classList.add('active');
                     tempSrc = image.src;
                     tempName = variant.getAttribute('data-name')
                     tempDescription = variant.getAttribute('data-description')
                     tempPrice = variant.getAttribute('data-price')
+                    tempOldPrice = variant.getAttribute('data-old-price')
                     bigImage.src = tempSrc;
                 });
+            });
+
+            const maxImages = 3; // Total number of images
+
+            const getCurrentIndices = () => {
+                // Extract the dynamic parts from the filename (_X_Y.png)
+                const src = bigImage.src;
+                const match = src.match(/_(\d+)_(\d+)\.png$/); // Matches _<number1>_<number2>.png
+                if (match) {
+                    return {
+                        groupIndex: parseInt(match[1], 10), // The first number (_1_, _2_, etc.)
+                        imageIndex: parseInt(match[2], 10), // The second number (_1, _2, etc.)
+                    };
+                }
+                return { groupIndex: 1, imageIndex: 1 }; // Defaults if no match
+            };
+
+            const updateImage = (newImageIndex) => {
+                // Replace only the second number (_X_<number>.png) dynamically
+                bigImage.src = bigImage.src.replace(/_(\d+)_(\d+)\.png$/, (match, groupIndex) => {
+                    return `_${groupIndex}_${newImageIndex}.png`;
+                });
+            };
+
+            // Handle left arrow click
+            document.querySelector('.left-arrow').addEventListener('click', () => {
+                const { groupIndex, imageIndex } = getCurrentIndices();
+                const newImageIndex = imageIndex === 1 ? maxImages : imageIndex - 1; // Loop back to max if at the start
+                updateImage(newImageIndex);
+            });
+
+            // Handle right arrow click
+            document.querySelector('.right-arrow').addEventListener('click', () => {
+                const { groupIndex, imageIndex } = getCurrentIndices();
+                const newImageIndex = imageIndex === maxImages ? 1 : imageIndex + 1; // Loop back to 1 if at the end
+                updateImage(newImageIndex);
             });
         }, 1000)
     </script>
