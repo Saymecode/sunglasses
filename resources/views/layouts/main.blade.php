@@ -8,7 +8,7 @@
     <meta name="description" content="Discover the elegance of Zivon sunglasses. Shop premium designs that combine style and functionality for a sophisticated look. Address: Seattle, WA, USA">
     <meta name="keywords" content="Zivon sunglasses, elegant sunglasses, premium eyewear, stylish sunglasses, luxury sunglasses, UV protection, Seattle">
     <meta name="author" content="Zivon">
-    <title>Sunglasses store</title>
+    <title>Zivon | Sunglasses store</title>
 </head>
     @yield('content')
 </body>
