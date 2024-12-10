@@ -1,6 +1,6 @@
 <html>
 <!DOCTYPE html>
-<link rel="stylesheet" href="./build/assets/app-CzVZsQpT.css">
+<link rel="stylesheet" href="./build/assets/app-BnTmfjtU.css">
 <body lang="en">
 <head>
     <meta charset="UTF-8">
