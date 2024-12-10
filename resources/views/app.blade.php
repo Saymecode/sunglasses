@@ -128,14 +128,14 @@
                 popup.appendChild(heading);
 
                 const addressSpan = document.createElement('span');
-                addressSpan.textContent = 'Address: Everett, WA';
+                addressSpan.textContent = 'Seattle, WA, USA';
                 popup.appendChild(addressSpan);
                 popup.appendChild(document.createElement('br'));
 
                 const phoneSpan = document.createElement('span');
                 const phoneLink = document.createElement('a');
                 phoneLink.href = 'tel:+12063275800';
-                phoneLink.textContent = 'Phone: +1 (206) 327-5800';
+                phoneLink.textContent = '+1 (206) 327-5800';
                 phoneSpan.appendChild(phoneLink);
                 popup.appendChild(phoneSpan);
                 popup.appendChild(document.createElement('br'));
@@ -143,7 +143,7 @@
                 const emailSpan = document.createElement('span');
                 const emailLink = document.createElement('a');
                 emailLink.href = 'mailto:fkpopal@gmail.com';
-                emailLink.textContent = 'Email: fkpopal@gmail.com';
+                emailLink.textContent = 'fkpopal@gmail.com';
                 emailSpan.appendChild(emailLink);
                 popup.appendChild(emailSpan);
                 popup.appendChild(document.createElement('br'));
