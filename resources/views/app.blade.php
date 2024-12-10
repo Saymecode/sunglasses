@@ -230,23 +230,21 @@
                 });
             });
 
-            const maxImages = 3; // Total number of images
+            const maxImages = 3;
 
             const getCurrentIndices = () => {
-                // Extract the dynamic parts from the filename (_X_Y.png)
                 const src = bigImage.src;
-                const match = src.match(/_(\d+)_(\d+)\.png$/); // Matches _<number1>_<number2>.png
+                const match = src.match(/_(\d+)_(\d+)\.png$/);
                 if (match) {
                     return {
-                        groupIndex: parseInt(match[1], 10), // The first number (_1_, _2_, etc.)
-                        imageIndex: parseInt(match[2], 10), // The second number (_1, _2, etc.)
+                        groupIndex: parseInt(match[1], 10),
+                        imageIndex: parseInt(match[2], 10),
                     };
                 }
-                return { groupIndex: 1, imageIndex: 1 }; // Defaults if no match
+                return { groupIndex: 1, imageIndex: 1 };
             };
 
             const updateImage = (newImageIndex) => {
-                // Replace only the second number (_X_<number>.png) dynamically
                 bigImage.src = bigImage.src.replace(/_(\d+)_(\d+)\.png$/, (match, groupIndex) => {
                     return `_${groupIndex}_${newImageIndex}.png`;
                 });
@@ -255,14 +253,14 @@
             // Handle left arrow click
             document.querySelector('.left-arrow').addEventListener('click', () => {
                 const { groupIndex, imageIndex } = getCurrentIndices();
-                const newImageIndex = imageIndex === 1 ? maxImages : imageIndex - 1; // Loop back to max if at the start
+                const newImageIndex = imageIndex === 1 ? maxImages : imageIndex - 1;
                 updateImage(newImageIndex);
             });
 
             // Handle right arrow click
             document.querySelector('.right-arrow').addEventListener('click', () => {
                 const { groupIndex, imageIndex } = getCurrentIndices();
-                const newImageIndex = imageIndex === maxImages ? 1 : imageIndex + 1; // Loop back to 1 if at the end
+                const newImageIndex = imageIndex === maxImages ? 1 : imageIndex + 1;
                 updateImage(newImageIndex);
             });
         }, 1000)
