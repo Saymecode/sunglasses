@@ -103,10 +103,13 @@
             let index = 0;
             let direction = 1;
             let iterations = 10;
+            const bigImage = document.getElementById('bigImage');
 
             function updateActiveClass(index) {
                 elements.forEach(el => el.classList.remove('active'));
                 elements[index].classList.add('active');
+                const image = elements[index].querySelector('img')
+                bigImage.src = image.src
             }
 
             function startAnimation() {
