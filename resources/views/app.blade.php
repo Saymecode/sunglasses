@@ -99,7 +99,7 @@
         document.addEventListener('DOMContentLoaded', () => {
             const elements = document.querySelectorAll('.variant');
             const totalElements = elements.length;
-            const interval = 300;
+            const interval = 400;
             let index = 0;
             let direction = 1;
             let iterations = 10;
@@ -109,6 +109,10 @@
                 elements.forEach(el => el.classList.remove('active'));
                 elements[index].classList.add('active');
                 const image = elements[index].querySelector('img')
+                document.querySelector('.variant-name').innerHTML = elements[index].getAttribute('data-name')
+                document.querySelector('.variant-description').innerHTML = elements[index].getAttribute('data-description')
+                document.querySelector('.variant-price').innerHTML = elements[index].getAttribute('data-price')
+                document.querySelector('.variant-old-price').innerHTML = elements[index].getAttribute('data-old-price')
                 bigImage.src = image.src
             }
 
