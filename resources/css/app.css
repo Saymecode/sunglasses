@@ -22,7 +22,7 @@ body {
 header {
     background-color: #111;
     color: #fff;
-    padding: 1rem 10px;
+    padding: 1rem 30px;
 }
 
 .header-container {
@@ -32,7 +32,7 @@ header {
 }
 
 main {
-    padding: 2rem 20px;
+    padding: 2rem 30px;
     height: calc(100% - 72px - 108.78px);
     flex: 1;
 }
@@ -42,7 +42,7 @@ img {
 }
 
 .logo img {
-    height: 50px;
+    height: 35px;
 }
 
 .product {
@@ -109,7 +109,7 @@ img {
     border: none;
     padding: 0.5rem 1.5rem;
     color: #fff;
-    font-size: 1rem;
+    font-size: 18px;
     border-radius: 25px;
     cursor: pointer;
 }
@@ -181,6 +181,10 @@ img {
     position: absolute;
     color: #ca453d;
     font-weight: bold;
+    user-select: none; /* Standard property */
+    -webkit-user-select: none; /* Chrome, Safari, Edge */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE 10+ */
 }
 
 .left-arrow {
@@ -304,7 +308,7 @@ img {
 footer {
     background-color: #111;
     color: #fff;
-    padding: 1rem 20px 1rem 10px;
+    padding: 1rem 30px 1rem 30px;
     .logo{
         display: flex;
         flex-direction: column;

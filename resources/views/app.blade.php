@@ -96,6 +96,39 @@
         </footer>
 
     <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const elements = document.querySelectorAll('.variant');
+            const totalElements = elements.length;
+            const interval = 300;
+            let index = 0;
+            let direction = 1;
+            let iterations = 10;
+
+            function updateActiveClass(index) {
+                elements.forEach(el => el.classList.remove('active'));
+                elements[index].classList.add('active');
+            }
+
+            function startAnimation() {
+                const intervalId = setInterval(() => {
+                    updateActiveClass(index);
+                    iterations--;
+
+                    index += direction;
+
+                    if (index === totalElements - 1 || index === 0) {
+                        direction *= -1;
+                    }
+
+                    if (iterations === 1) {
+                        clearInterval(intervalId);
+                    }
+                }, interval);
+            }
+
+            startAnimation();
+        })
+
         setTimeout(function () {
             const showPopupButton = document.getElementById('showPopup');
 
